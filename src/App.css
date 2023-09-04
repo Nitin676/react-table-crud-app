@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+/* ResetCSS-START */
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --bd-purple: #4c0bce;
+  --bd-violet: #712cf9;
+  --bd-accent: #ffe484;
+  --bd-yellow: #ffc107;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  --bd-accent-rgb: 255, 228, 132;
+  --bd-pink-rgb: 214, 51, 132;
+  --bd-teal-rgb: 32, 201, 151;
+  --docsearch-primary-color: var(--bd-violet);
+  --docsearch-logo-color: var(--bd-violet);
+  --text-white: #ffffff;
+  --text-black: #333333;
+  --text-yellow: #ffc107;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bd-black);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0rem;
 }
 
-.App-link {
-  color: #61dafb;
+.sidemenu {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  padding: 4rem 2rem;
+}
+
+.main .card {
+  margin-top: 3rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.table th {
+  color: var(--text-black);
+  background-color: var(--bd-yellow);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0rem;
+  padding: 1rem;
+}
+
+.table td {
+  color: var(--text-black);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0rem;
+  padding: 1rem;
+}
+
+.form-control {
+  color: var(--text-black);
+  font-size: 1.4rem;
+  font-weight: 400;
 }
